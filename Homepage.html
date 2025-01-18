@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurora Jewels</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #262620;
+      color: #75770a;
+      text-align: center;
+    }
+
+    /* Header Section */
+    .header {
+      background: linear-gradient(90deg, #d4af37, #b76e79);
+      padding: 50px 0;
+      color: rgb(15, 8, 8);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 48px;
+      font-weight: bold;
+      font-family: 'Georgia', serif;
+    }
+
+    .navbar a {
+      color: rgb(9, 8, 8);
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url('https://images.pexels.com/photos/8100365/pexels-photo-8100365.jpeg');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 100px 20px;
+      color: rgb(242, 234, 234);
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons .btn {
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+    .btn-primary {
+      background-color: #d4af37;
+      color: white;
+    }
+
+    .btn-secondary {
+      background-color: #b76e79;
+      color: white;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    /* Featured Collections Section */
+    .featured-collections {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .featured-container {
+      max-width: 800px;
+      margin: 0 auto; /* Centers the section content */
+    }
+
+    .featured-collection-grid {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap; /* Ensures responsiveness */
+    }
+
+    .collection-item {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .collection-item img {
+      border-radius: 5px;
+      margin-bottom: 20px;
+      width: 100%;
+      height: auto;
+    }
+
+    /* Footer Section */
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .social-links a {
+      color: #d4af37;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      color: #b76e79;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">Aurora Jewels</div>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Collections</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Header Section -->
+  <section class="Main">
+    <div class="Main-content">
+      <h1>Where Beauty Meets Perfection</h1>
+      <p>Make every moment shine with our jewelry</p>
+      <div class="main-buttons">
+        <a href="#" class="btn btn-primary">Discover Collections</a>
+        <a href="#" class="btn btn-secondary">Add to Cart</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Collections Section -->
+  <section class="featured-collections">
+    <div class="featured-container">
+      <h2>Our Featured Collections</h2>
+      <div class="featured-collection-grid">
+        <div class="collection-item">
+          <img src="Customcreation.jpeg.jpg" alt="Custom Creations">
+          <h3>Custom Creations</h3>
+          <p>Unique designs crafted just for you.</p>
+        </div>
+        <div class="collection-item">
+          <img src="Rings.jpeg.jpg" alt="Wedding Collection">
+          <h3>Wedding Collection</h3>
+          <p>Stunning rings for your special day.</p>
+        </div>
+        <div class="collection-item">
+          <img src="https://images.pexels.com/photos/20858950/pexels-photo-20858950.jpeg" alt="Everyday Elegance">
+          <h3>Everyday Elegance</h3>
+          <p>Perfect pieces for daily wear.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Aurora Jewels</p>
+      <div class="social websites links ">
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
