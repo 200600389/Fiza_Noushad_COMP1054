@@ -1,0 +1,132 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ffe4ec, #f8bbd0); /* Gradient background */
+  background-image: url('background.jpeg.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header */
+header {
+  background-color: rgba(255, 182, 193, 0.9);
+  color: #1099b5;
+  text-align: center;
+  padding: 15px;
+}
+
+header h1 {
+  font-family: 'Emilys Candy', cursive;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 600;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+  text-align: center;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 1000px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+  font-family: 'Ribeye', cursive;
+  color: #d81b60;
+  font-size: 1.8rem;
+}
+
+.main-content p {
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+/* Image Styling */
+.main-content img {
+  width: 40%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 15px;
+  border: 5px solid #ff80ab;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.main-content img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: rgba(232, 177, 137, 0.9);
+  color: #333;
+  padding: 15px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer .footer-content img {
+  width: 80px;
+  height: auto;
+  margin: 15px 0;
+}
+
+footer form {
+  margin-top: 15px;
+}
+
+footer form input,
+footer form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 380px;
+  border: 2px solid #ff80ab;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer form button {
+  padding: 8px 16px;
+  background-color: #ff80ab;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+footer form button:hover {
+  background-color: #f50057;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .main-content img {
+    max-width: 85%;
+  }
+
+  footer form input,
+  footer form textarea {
+    width: 100%;
+  }
+}
